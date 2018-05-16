@@ -1,0 +1,33 @@
+.el-button {
+  &--default {
+    color: rgba($--color-black, .88);
+    background-color: $--color-white;
+  }
+  &:hover,
+  &:focus {
+    color: rgba($--color-black,.88);
+    background: hsla(0,0%,100%,.1);
+    border-color: rgba($--color-black,.88);
+    box-shadow: 0 6px 6px 0 rgba($--color-black,.2);
+    opacity: .8;
+    &.is-disabled {
+      box-shadow:none;
+    }
+  }
+
+  &--primary {
+    @include button-variant($--button-primary-color, $--button-primary-fill, $--button-primary-border);
+  }
+  &--success {
+    @include button-variant($--button-success-color, $--color-success, $--button-success-border);
+  }
+  &--info {
+    @include button-variant($--button-info-color, $--color-info, $--button-info-border);
+  }
+  &--warning {
+    @include button-variant($--button-warning-color, $--color-warning, $--button-warning-border);
+  }
+  &--danger {
+    @include button-variant($--button-danger-color, $--color-danger, $--button-danger-border);
+  }
+}

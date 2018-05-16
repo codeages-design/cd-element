@@ -1,4 +1,4 @@
-@import './grid.less';
+@import 'grid.scss';
 
 .transition(@property: all, @time: .3s, @type: ease) {
   transition: @property @time @type;

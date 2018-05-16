@@ -30,6 +30,13 @@ module.exports = {
                   sourceMap: true,
                 },
               },
+              {
+                loader: 'postcss-loader',
+                options: {
+                  parser: 'sugarss',
+                  exec: true
+                }
+              }
             ],
             less: [
               'vue-style-loader',
@@ -46,6 +53,13 @@ module.exports = {
                 },
               },
             ],
+            scss: [
+              'vue-style-loader',
+              'css-loader',
+              'postcss-loader',
+              'sass-loader'
+            ],
+
           },
           postLoaders: {
             html: 'babel-loader?sourceMap'
@@ -104,6 +118,19 @@ module.exports = {
           },
         ]
       },
+      {
+        test: /\.(eot|woff|ttf)$/,
+        loader: 'file-loader'
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?\S*)?$/,
+        use: [{
+          loader: 'url-loader',
+          options: {
+            useRelativePath: process.env.NODE_ENV === "production"
+          }
+        }]
+      }
     ]
   },
   externals: {

@@ -1,23 +1,23 @@
-.@{prefix}-badge {
+.#{$prefix}-badge {
   padding: 2px 5px;
   border: 2px solid #fff;
   .box-shadow-z(2px);
-  font-size: @font-size-xs;
+  font-size: $font-size-xs;
   line-height: 1;
   color: #fff;
-  border-radius: @badge-border-radius;
+  border-radius: $badge-border-radius;
   display: inline-block;
   text-align: center;
 }
-.@{prefix}-badge-danger {
-  background-color: @color-danger;
+.#{$prefix}-badge-danger {
+  background-color: $color-danger;
 }
-.@{prefix}-badge-success {
-  background-color: @color-success;
+.#{$prefix}-badge-success {
+  background-color: $color-success;
 }
-.@{prefix}-badge-warning {
-  background-color: @color-warning;
+.#{$prefix}-badge-warning {
+  background-color: $color-warning;
 }
-.@{prefix}-badge-info {
-  background-color: @color-info;
+.#{$prefix}-badge-info {
+  background-color: $color-info;
 }

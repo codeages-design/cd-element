@@ -9,7 +9,7 @@ a {
 }
 
 body {
-  background: @bg;
+  background: $bg;
   line-height: 22px;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.56);
@@ -24,6 +24,6 @@ body {
   unicode-range: U+30-39;
 }
 
-.@{prefix}-icon {
+.#{$prefix}-icon {
   line-height: 1;
 }

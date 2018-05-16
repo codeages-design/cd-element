@@ -1,4 +1,4 @@
-.@{prefix}-v-menu {
+.#{$prefix}-v-menu {
   margin: 0;
   padding: 16px 0;
   font-size: 14px;
@@ -9,15 +9,15 @@
     padding: 12px 24px;
     line-height: 20px;
     color: #fff;
-    .text-overflow;
-    .transition();
+    @include text-overflow;
+    @include transition();
     &:hover {
       cursor: pointer;
-      background-color: darken(@sidebar-bg, 3%);
-      .transition();
+      background-color: darken($sidebar-bg, 3%);
+      @include transition();
     }
     &.active {
-      background-color: darken(@sidebar-bg, 5%);
+      background-color: darken($sidebar-bg, 5%);
       &:before {
         position: absolute;
         top: 0;
@@ -25,14 +25,14 @@
         content: "";
         width: 4px;
         height: 100%;
-        background-color: @color-primary;
+        background-color: $color-primary;
       }
     }
     &.open {
-      .@{prefix}-v-menu__action {
+      .#{$prefix}-v-menu__action {
         > i {
           transform: rotate(180deg);
-          .transition();
+          @include transition();
         }
       }
     }
@@ -41,20 +41,20 @@
     > i {
       position: absolute;
       right: 24px;
-      .transition();
+      @include transition();
     }
   }
 }
 
-.@{prefix}-v-menu.@{prefix}-v-menu--collapse {
+.#{$prefix}-v-menu.#{$prefix}-v-menu--collapse {
   > li {
     position: relative;
     padding-left: 0;
   }
-  .@{prefix}-v-menu__action {
+  .#{$prefix}-v-menu__action {
     display: none;
   }
-  .@{prefix}-v-menu__name {
+  .#{$prefix}-v-menu__name {
     display: none;
   }
 }

@@ -1,22 +1,22 @@
-.make-animate(@animateName, @animateTime: 0.3s, @functionFunction: ease, @animationDelay: 0) {
-  .@{animateName}-enter-active {
-    animation-name: ~"@{animateName}-in";
+@mixin make-animate($animateName, $animateTime: 0.3s, $functionFunction: ease, $animationDelay: 0) {
+  .#{$animateName}-enter-active {
+    animation-name: "#{$animateName}-in";
   }
-  .@{animateName}-leave-active {
-    animation-name: ~"@{animateName}-out";
+  .#{$animateName}-leave-active {
+    animation-name: "#{$animateName}-out";
   }
 
-  .@{animateName}-enter-active,
-  .@{animateName}-leave-active {
-    animation-duration: @animateTime;
-    animation-timing-function: @functionFunction;
-    animation-delay: @animationDelay;
+  .#{$animateName}-enter-active,
+  .#{$animateName}-leave-active {
+    animation-duration: $animateTime;
+    animation-timing-function: $functionFunction;
+    animation-delay: $animationDelay;
   }
 }
 
-@import './fade.less';
-@import './message-fade.less';
-@import './collapse.less';
+$import 'fade.scss';
+$import 'message-fade';
+$import 'collapse.scss';
 
-.make-animate(fade);
-.make-animate(message-fade);
+@include make-animate(fade);
+@include make-animate(message-fade);

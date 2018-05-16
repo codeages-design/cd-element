@@ -1,23 +1,23 @@
-@import 'grid.scss';
+//@import 'grid.scss';
 
-.transition(@property: all, @time: .3s, @type: ease) {
-  transition: @property @time @type;
+@mixin transition($property: all, $time: .3s, $type: ease) {
+  transition: $property $time $type;
 }
 
-.hover-light(@opacity: .8) {
-  opacity: @opacity;
+@mixin hover-light($opacity: .8) {
+  opacity: $opacity;
 }
 
-.box-shadow-z(@level) {
-  box-shadow: 0 0 @level 0 rgba(0,0,0,0.02), 0 0 @level 0 rgba(0,0,0,0.04), 0 @level @level 0 rgba(0,0,0,0.06);
+@mixin box-shadow-z($level) {
+  box-shadow: 0 0 $level 0 rgba(0,0,0,0.02), 0 0 $level 0 rgba(0,0,0,0.04), 0 $level $level 0 rgba(0,0,0,0.06);
 }
 
-.box-shadow-inset(@value: 0 -1px 0 0) {
-  box-shadow: inset @value rgba(0, 0, 0, 0.08);
+@mixin box-shadow-inset($value: 0 -1px 0 0) {
+  box-shadow: inset $value rgba(0, 0, 0, 0.08);
 
 }
 
-.text-overflow {
+@mixin text-overflow {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

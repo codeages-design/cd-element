@@ -14,9 +14,9 @@
   }
 }
 
-$import 'fade.scss';
-$import 'message-fade';
-$import 'collapse.scss';
+@import 'fade.scss';
+@import 'message-fade';
+@import 'collapse.scss';
 
 @include make-animate(fade);
 @include make-animate(message-fade);

@@ -1,5 +1,3 @@
-import Row from './components/row';
-import Col from './components/col';
 import Icon from './components/icon';
 import VMenu from './components/v-menu';
 import VSubmenu from './components/v-submenu';
@@ -7,17 +5,14 @@ import Sidebar from './components/sidebar';
 import Step from './components/step';
 import Steps from './components/steps';
 import Panel from './components/panel';
-import Alert from './components/alert';
 import Badge from './components/badge';
 import CollapseTransition from './components/collapse-transition';
 
-import message from './components/message';
+// import message from './components/message';
 
 import pkg from '../package.json';
 
 const components = {
-  Row,
-  Col,
   Icon,
   VMenu,
   VSubmenu,
@@ -25,7 +20,6 @@ const components = {
   Step,
   Steps,
   Panel,
-  Alert,
   Badge,
   CollapseTransition
 };
@@ -35,7 +29,7 @@ const install = (Vue, options = {}) => {
     Vue.component(components[key].name, components[key]);
   });
   
-  Vue.prototype.$message = message;
+  // Vue.prototype.$message = message;
 };
 
 if (typeof window !== 'undefined' && window.Vue) {

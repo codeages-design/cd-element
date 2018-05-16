@@ -1,5 +1,5 @@
 {
-    "name": "cd-vue",
+    "name": "cd-element",
     "version": "0.1.1",
     "description": "a Web Design Language",
     "main": "dist/index.min.js",
@@ -13,7 +13,7 @@
         "url": "git+https://github.com/codeages-design/cd-element.git"
     },
     "keywords": [
-        "cd-vue",
+        "cd-element",
         "vue",
         "component",
         "ui-component",

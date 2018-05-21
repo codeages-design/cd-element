@@ -1,15 +1,15 @@
 # Codeages Design Vue
 
-a Web Design Language Based on the Vue version
+a Web Design Language Based on the Vue version and changed the Element theme
 
 
 ### how to use ?
 
 ```js
-import cdvue from 'cd-vue';
+import cdele from 'cd-element';
 import 'cd-vue/dist/styles/index.css';
 
-Vue.use(cdvue);
+Vue.use(cdele);
 ```
 
 If you want to On-demand use? 
@@ -23,7 +23,7 @@ Then edit .babelrc:
 ```
 "plugins": [
   ["import", {
-    "libraryName": "cd-vue",
+    "libraryName": "cd-element",
     "libraryDirectory": "src/components"
   }]
 ],
@@ -33,10 +33,10 @@ Then edit main.js
 
 ```js
 import {
-  Alert,
-  Panel,
-} from 'cd-vue';
+  VMenu,
+  VSubmenu
+} from 'cd-element';
 
-Vue.component('cd-alert', Alert);
-Vue.component('cd-panel', Panel);
+Vue.component('cd-v-menu', VMenu);
+Vue.component('cd-v-submenu', VSubmenu);
 ```

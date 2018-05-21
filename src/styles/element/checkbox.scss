@@ -1,34 +1,7 @@
-.el-checkbox {
-  &__inner {
-    border-radius: 50%;
-    &::after {
-      content: '';
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      width: 7px;
-      height: 7px;
-      background: #fff;
-      border-radius: 50%;
-      display: inline-block;
-      animation-name: radio-dot;
-      animation-duration: .2s;
-      transform: none;
-    }
-  }
-  &__label {
-    color: rgba(0,0,0,.56);
-  }
-}
 .el-checkbox__input {
   &.is-checked {
     + .el-checkbox__label {
       color: rgba(0,0,0,.56);
-    }
-    .el-checkbox__inner{
-      &::after {
-        transform: none;
-      }
     }
   }
 }

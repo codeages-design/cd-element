@@ -38,21 +38,6 @@ module.exports = {
                 }
               }
             ],
-            less: [
-              'vue-style-loader',
-              {
-                loader: 'css-loader',
-                options: {
-                  sourceMap: true,
-                },
-              },
-              {
-                loader: 'less-loader',
-                options: {
-                  sourceMap: true,
-                },
-              },
-            ],
             scss: [
               'vue-style-loader',
               'css-loader',

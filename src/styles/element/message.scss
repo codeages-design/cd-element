@@ -1,0 +1,14 @@
+.el-message {
+  &--success {
+    //@include message-variant();
+  }
+}
+
+@mixin message-variant($bg, $color) {
+  background-color: $bg;
+  border-color: $bg;
+
+  .el-message__content {
+    color: $color;
+  }
+}

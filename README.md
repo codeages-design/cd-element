@@ -1,6 +1,6 @@
 # Codeages Design Vue
 
-a Web Design Language Based on the Vue version and changed the Element theme
+a Web Design Language Based on the Vue version and change the Element theme
 
 
 ### how to use ?

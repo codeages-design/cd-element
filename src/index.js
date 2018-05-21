@@ -13,12 +13,9 @@ import CollapseTransition from './components/collapse-transition';
 import pkg from '../package.json';
 
 const components = {
-  Icon,
   VMenu,
   VSubmenu,
   Sidebar,
-  Step,
-  Steps,
   Panel,
   Badge,
   CollapseTransition

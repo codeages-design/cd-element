@@ -6,10 +6,10 @@ a Web Design Language Based on the Vue version and changed the Element theme
 ### how to use ?
 
 ```js
-import cdele from 'cd-element';
-import 'cd-vue/dist/styles/index.css';
+import cdElement from 'cd-element';
+import 'cd-element/dist/styles/index.css';
 
-Vue.use(cdele);
+Vue.use(cdElement);
 ```
 
 If you want to On-demand use? 

@@ -4,9 +4,9 @@
   }
 }
 
-@mixin message-variant($bg, $color) {
-  background-color: $bg;
-  border-color: $bg;
+@mixin message-variant($--bg, $color) {
+  background-color: $--bg;
+  border-color: $--bg;
 
   .el-message__content {
     color: $color;

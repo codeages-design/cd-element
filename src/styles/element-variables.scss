@@ -15,9 +15,8 @@ $--color-transition-base: color .2s cubic-bezier(.645, .045, .355, 1) !default;
 /* Colors
 -------------------------- */
 
-$--color-white: #fff !default;
-$--color-black: #000 !default;
-$--color-primary: $color-primary !default;
+
+$--color-primary: $--color-primary-status !default;
 $--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default;
 
 /* 53a8ff */
@@ -54,10 +53,10 @@ $--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default;
 
 /* ecf5ff */
 
-$--color-success: $color-success !default;
-$--color-warning: $color-warning !default;
-$--color-danger: $color-danger !default;
-$--color-info: $color-info !default;
+$--color-success: $--color-success-status !default;
+$--color-warning: $--color-warning-status !default;
+$--color-danger: $--color-danger-status !default;
+$--color-info: $--color-info-status !default;
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
 $--color-danger-light: mix($--color-white, $--color-danger, 80%) !default;
@@ -349,9 +348,9 @@ $--input-color-disabled: $--font-color-disabled-base !default;
 $--input-icon-color: $--color-text-placeholder !default;
 $--input-placeholder-color: $--color-text-placeholder !default;
 $--input-max-width: 314px !default;
-$--input-hover-border: $--border-color-hover !default;
+$--input-hover-border: $--input-hover-border-color !default;
 $--input-clear-hover-color: $--color-text-secondary !default;
-$--input-focus-border: $--color-primary !default;
+$--input-focus-border: $--input-focus-border-color !default;
 $--input-focus-fill: $--color-white !default;
 $--input-disabled-fill: $--disabled-fill-base !default;
 $--input-disabled-border: $--disabled-border-base !default;
@@ -643,82 +642,6 @@ $--datepicker-active-color: $--color-primary !default;
 $--datepicker-text-hover-color: $--color-primary !default;
 $--datepicker-cell-hover-color: #fff !default;
 
-/* Loading
---------------------------*/
-
-$--loading-spinner-size: 42px !default;
-$--loading-fullscreen-spinner-size: 50px !default;
-
-/* Scrollbar
---------------------------*/
-
-$--scrollbar-background-color: rgba($--color-text-secondary, .3) !default;
-$--scrollbar-hover-background-color: rgba($--color-text-secondary, .5) !default;
-
-/* Carousel
---------------------------*/
-
-$--carousel-arrow-font-size: 12px !default;
-$--carousel-arrow-size: 36px !default;
-$--carousel-arrow-background: rgba(31, 45, 61, 0.11) !default;
-$--carousel-arrow-hover-background: rgba(31, 45, 61, 0.23) !default;
-$--carousel-indicator-width: 30px !default;
-$--carousel-indicator-height: 2px !default;
-$--carousel-indicator-padding-horizontal: 4px !default;
-$--carousel-indicator-padding-vertical: 12px !default;
-$--carousel-indicator-out-color: $--border-color-hover !default;
-
-/* Collapse
---------------------------*/
-
-$--collapse-border-color: $--border-color-lighter !default;
-$--collapse-header-height: 48px !default;
-$--collapse-header-padding: 20px !default;
-$--collapse-header-fill: $--color-white !default;
-$--collapse-header-color: $--color-text-primary !default;
-$--collapse-header-size: 13px !default;
-$--collapse-content-fill: $--color-white !default;
-$--collapse-content-size: 13px !default;
-$--collapse-content-color: $--color-text-primary !default;
-
-/* Transfer
---------------------------*/
-
-$--transfer-border-color: $--border-color-lighter !default;
-$--transfer-border-radius: $--border-radius-base !default;
-$--transfer-panel-width: 200px !default;
-$--transfer-panel-header-height: 40px !default;
-$--transfer-panel-header-background: $--background-color-base !default;
-$--transfer-panel-footer-height: 40px !default;
-$--transfer-panel-body-height: 246px !default;
-$--transfer-item-height: 30px !default;
-$--transfer-item-hover-background: $--color-text-secondary !default;
-$--transfer-filter-height: 32px !default;
-
-/* Header
-  --------------------------*/
-
-$--header-padding: 0 20px !default;
-
-/* Footer
---------------------------*/
-
-$--footer-padding: 0 20px !default;
-
-/* Main
---------------------------*/
-
-$--main-padding: 20px !default;
-
-/* Break-point
---------------------------*/
-
-$--sm: 768px !default;
-$--md: 992px !default;
-$--lg: 1200px !default;
-$--xl: 1920px !default;
-$--breakpoints: ( 'xs': (max-width: $--sm), 'sm': (min-width: $--sm), 'md': (min-width: $--md), 'lg': (min-width: $--lg), 'xl': (min-width: $--xl));
-$--breakpoints-spec: ( 'xs-only': (max-width: $--sm - 1), 'sm-and-up': (min-width: $--sm), 'sm-only': "(min-width: #{$--sm}) and (max-width: #{$--md} - 1)", 'sm-and-down': (max-width: $--md - 1), 'md-and-up': (min-width: $--md), 'md-only': "(min-width: #{$--md}) and (max-width: #{$--lg } - 1)", 'md-and-down': (max-width: $--lg - 1), 'lg-and-up': (min-width: $--lg), 'lg-only': "(min-width: #{$--lg}) and (max-width: #{$--xl } - 1)", 'lg-and-down': (max-width: $--xl - 1), 'xl-only': (min-width: $--xl), );
 $--font-path: '~element-ui/lib/theme-chalk/fonts';
 @import "~element-ui/packages/theme-chalk/src/index";
 @import "element/main.scss";

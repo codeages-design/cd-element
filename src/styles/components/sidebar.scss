@@ -4,19 +4,19 @@
   top: 0;
   bottom: 0;
   height: 100%;
-  width: $sidebar-width;
-  color: $sidebar-color;
+  width: $--sidebar-width;
+  color: $--sidebar-color;
   // overflow-y: auto;
   // overflow-x: hidden;
-  background-color: $sidebar-bg;
-  z-index: $sidebar-zindex;
+  background-color: $--sidebar-bg;
+  z-index: $--sidebar-zindex;
   @include transition();
   &__header {
-    padding: $sidebar-header-padding;
-    background-color: $sidebar-header-bg;
+    padding: $--sidebar-header-padding;
+    background-color: $--sidebar-header-bg;
   }
   &__logo {
-    width: $sidebar-logo-width;
+    width: $--sidebar-logo-width;
     display: inline-block;
     color: #fff;
     @include text-overflow;
@@ -25,13 +25,13 @@
 }
 
 .#{$prefix}-sidebar.#{$prefix}-sidebar--collapse {
-  width: $sidebar-collapse-width;
+  width: $--sidebar-collapse-width;
   @include transition();
   .#{$prefix}-sidebar__header {
-    padding: $sidebar-collapse-header-padding;
+    padding: $--sidebar-collapse-header-padding;
   }
   .#{$prefix}-sidebar__logo {
-    width: $sidebar-collapse-logo-width;
+    width: $--sidebar-collapse-logo-width;
     @include transition();
   }
 }

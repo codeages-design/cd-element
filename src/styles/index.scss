@@ -1,11 +1,9 @@
 @import './variables.scss';
-@import "./element-variables.scss";
 @import './mixins/index.scss';
+@import "./element-variables.scss";
 @import './tools/index.scss';
 @import './animation/index.scss';
 @import 'global.scss';
 @import './components/sidebar.scss';
 @import './components/v-menu.scss';
 @import './components/v-submenu.scss';
-@import './components/steps.scss';
-@import './components/step.scss';

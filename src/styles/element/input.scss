@@ -1,0 +1,47 @@
+//@mixin input-status {
+//  padding-bottom: $--input-border-bottom;
+//  border-bottom-width: $--input-border-bottom - 1;
+//  @include transition();
+//}
+//
+//.el-input {
+//  &__inner {
+//    border: none;
+//    border-bottom: 1px solid $--input-hover-border-color;
+//    border-radius: 0;
+//    padding: $--input-border-bottom + 2 0 $--input-border-bottom + 1 0;
+//    &:hover, &:focus {
+//      @include input-status;
+//    }
+//  }
+//  &--prefix {
+//    .el-input__inner {
+//      padding-left: $--input-padding-left;
+//    }
+//  }
+//  &__prefix {
+//    left: 0;
+//  }
+//  &.is-disabled {
+//    .el-input__inner {
+//      border: none;
+//      border-bottom: 1px dashed $--input-hover-border-color;
+//      color: $--input-focus-border-color;
+//      opacity: $--input-opacity;
+//      background: none;
+//      padding-bottom: $--input-border-bottom - 1;
+//    }
+//  }
+//}
+//.el-select {
+//  .el-input.is-focus {
+//    .el-input__inner {
+//      @include input-status;
+//      border-color: $--input-focus-border-color;
+//    }
+//  }
+//  .el-input__inner:focus {
+//    border-color: $--input-focus-border-color;
+//  }
+//}
+

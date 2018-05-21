@@ -13,11 +13,11 @@
     @include transition();
     &:hover {
       cursor: pointer;
-      background-color: darken($sidebar-bg, 3%);
+      background-color: darken($--sidebar-bg, 3%);
       @include transition();
     }
     &.active {
-      background-color: darken($sidebar-bg, 5%);
+      background-color: darken($--sidebar-bg, 5%);
       &:before {
         position: absolute;
         top: 0;
@@ -25,7 +25,7 @@
         content: "";
         width: 4px;
         height: 100%;
-        background-color: $color-primary;
+        background-color: $--color-primary-status;
       }
     }
     &.open {

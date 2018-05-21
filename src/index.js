@@ -2,8 +2,6 @@ import Icon from './components/icon';
 import VMenu from './components/v-menu';
 import VSubmenu from './components/v-submenu';
 import Sidebar from './components/sidebar';
-import Step from './components/step';
-import Steps from './components/steps';
 import Panel from './components/panel';
 import Badge from './components/badge';
 import CollapseTransition from './components/collapse-transition';
@@ -13,6 +11,7 @@ import CollapseTransition from './components/collapse-transition';
 import pkg from '../package.json';
 
 const components = {
+  Icon,
   VMenu,
   VSubmenu,
   Sidebar,

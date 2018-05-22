@@ -3,10 +3,7 @@ import VMenu from './components/v-menu';
 import VSubmenu from './components/v-submenu';
 import Sidebar from './components/sidebar';
 import Panel from './components/panel';
-import Badge from './components/badge';
 import CollapseTransition from './components/collapse-transition';
-
-// import message from './components/message';
 
 import pkg from '../package.json';
 
@@ -16,7 +13,6 @@ const components = {
   VSubmenu,
   Sidebar,
   Panel,
-  Badge,
   CollapseTransition
 };
 
@@ -25,7 +21,6 @@ const install = (Vue, options = {}) => {
     Vue.component(components[key].name, components[key]);
   });
   
-  // Vue.prototype.$message = message;
 };
 
 if (typeof window !== 'undefined' && window.Vue) {

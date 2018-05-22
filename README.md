@@ -1,15 +1,18 @@
 # Codeages Design Vue
 
-a Web Design Language Based on the Vue version and change the Element theme
-
+a Web Design Language Based on the Vue and Element version 
 
 ### how to use ?
 
+about element component, The same use method as element.
+
 ```js
+import ElementUI from 'element-ui';
 import cdElement from 'cd-element';
 import 'cd-element/dist/styles/index.css';
 
 Vue.use(cdElement);
+Vue.use(ElementUI);
 ```
 
 If you want to On-demand use? 
